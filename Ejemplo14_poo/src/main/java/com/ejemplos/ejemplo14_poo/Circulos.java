@@ -1,13 +1,35 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.ejemplos.ejemplo14_poo;
 
-/**
- *
- * @author luis_
- */
-public class Circulos {
+public class Circulos extends Figuras {
+    //atributos
+    private double radio;
+    //constante pi
+    double pi = 3.1416;
+    
+    //constructor
+    public Circulos(double radio) {
+        this.radio = radio;
+    }
+    
+    //getters
+    public double getRadio() {
+        return radio;
+    }
+    //setters
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }    
+    //métodos funcionales
+    @Override
+    public double getArea(){
+        double a = pi*radio*radio;
+        return a;
+    }    
+    @Override
+    public double getPerimetro(){
+        double p = 2*pi*radio;
+        return p;
+    }
+    
     
 }
