@@ -28,7 +28,7 @@ public class Informes {
             if ( datos.get(i).getValorServicio() > mayorPago ){
                 mayorPago = datos.get(i).getValorServicio();
                 mayorRuta = datos.get(i).getRutaOrigen() +
-                        "  " + datos.get(i).getRutaDestino();
+                        " - " + datos.get(i).getRutaDestino();
             }
         }
         
